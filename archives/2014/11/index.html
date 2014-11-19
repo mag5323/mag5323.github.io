@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: Graph Theory | mag5323&#39;s blog</title>
+  <title>Archives: 2014/11 | mag5323&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="mag5323's blog">
-<meta property="og:url" content="http://yoursite.com/categories/Graph-Theory/">
+<meta property="og:url" content="http://yoursite.com/archives/2014/11/">
 <meta property="og:site_name" content="mag5323's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -67,16 +67,12 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Heuristics-for-finding-k-clubs" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-snap" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/10/29/Heuristics-for-finding-k-clubs/" class="article-date">
-  <time datetime="2014-10-29T06:37:43.000Z" itemprop="datePublished">10月 29 2014</time>
+    <a href="/2014/11/19/snap/" class="article-date">
+  <time datetime="2014-11-19T06:58:16.000Z" itemprop="datePublished">11月 19 2014</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Graph-Theory/">Graph Theory</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -85,7 +81,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/10/29/Heuristics-for-finding-k-clubs/">Heiruistics for finding k-clubs</a>
+      <a class="article-title" href="/2014/11/19/snap/">snap</a>
     </h1>
   
 
@@ -93,29 +89,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Heuristics">Heuristics</h1>
-<ol>
-<li>Constellation<br> <img src="http://ars.els-cdn.com/content/image/1-s2.0-S0305054899000477-gr4.gif" alt="Construction of the first two stars in CONSTELLATION"></li>
-<li>Drop<br> <img src="http://ars.els-cdn.com/content/image/1-s2.0-S0305054899000477-gr5.gif" alt="Illustration of heuristic DROP"></li>
-<li>K-clique &amp; Drop</li>
-<li>Backbone<br> <img src="http://ars.els-cdn.com/content/image/1-s2.0-S0305054814001889-gr3.jpg" alt="Illustration of heuristic Backbone&#39;s dominance over heuristic Constellation."></li>
-</ol>
-<h2 id="找到_k-club_即停止，也就是說以上四種找到的_k-club_皆不是_Maximal_k-club-">找到 k-club 即停止，也就是說以上四種找到的 k-club 皆不是 Maximal k-club.</h2>
-<h1 id="Graph">Graph</h1>
-<ol>
-<li>平面圖<br> <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Frucht_graph.dot.svg/200px-Frucht_graph.dot.svg.png" alt="平面圖"><br> 平面圖是可以畫在平面上並且使得不同的邊可以互不交疊的圖.</li>
-<li>完全圖<br> <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Complete_graph_K7.svg/640px-Complete_graph_K7.svg.png" alt="含有7個頂點的完全圖"><br> 完全圖是每對頂點之間都恰連有一條邊的簡單圖。n個端點的完全圖有n個端點及n(n−1)/2條邊，以Kn表示。它是(k−1)-正則圖。所有完全圖都是它本身的團（clique）。</li>
-<li>二分圖<br> <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Simple-bipartite-graph.svg/200px-Simple-bipartite-graph.svg.png" alt="二分圖"><br> 指頂點可以分成兩個不相交的集U和V（ (U and V 皆為獨立集independent sets)，使&gt;得在同一個集內的頂點不相鄰（沒有共同邊）的圖。指頂點可以分成兩個不相交的集U和V（ (U and V 皆為獨立集independent sets)，使得在同一個集內的頂點不相鄰（沒有共同邊&gt;）的圖。</li>
-</ol>
-<h1 id="Reference_Paper">Reference Paper</h1>
-<p><a href="http://www.sciencedirect.com/science/article/pii/S0305054899000477" target="_blank" rel="external">Heuristics for finding k-clubs in an undirected graph</a><br><a href="http://www.sciencedirect.com/science/article/pii/S0305054814001889" target="_blank" rel="external">Two-phase heuristics for the k-club problem</a></p>
+        <h1 id="SNAP_for_Python">SNAP for Python</h1>
+<p><a href="http://snap.stanford.edu/snappy/index.html#input" target="_blank" rel="external">Snap.py</a></p>
+<p><a href="http://snap.stanford.edu/snappy/release/snap-1.1-2.3-centos6.5-x64-py2.6.tar.gz" target="_blank" rel="external">download link</a></p>
+<h2 id="Local_Install_of_Snap-py">Local Install of Snap.py</h2>
+<p>copy <code>snap.py</code> and <code>_snap.so</code> to your working directory.</p>
+<h2 id="How_to_use">How to use</h2>
+<p>put <code>from snap import *</code> on the first line, then write your program.</p>
+<h2 id="Example">Example</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># create a graph PNGraph</span></div><div class="line">G1 = TNGraph.New()</div><div class="line">G1.AddNode(<span class="number">1</span>)</div><div class="line">G1.AddNode(<span class="number">5</span>)</div><div class="line">G1.AddNode(<span class="number">32</span>)</div><div class="line">G1.AddEdge(<span class="number">1</span>,<span class="number">5</span>)</div><div class="line">G1.AddEdge(<span class="number">5</span>,<span class="number">1</span>)</div><div class="line">G1.AddEdge(<span class="number">5</span>,<span class="number">32</span>)</div><div class="line">G1.dump()</div></pre></td></tr></table></figure>
+
+<h2 id="Document">Document</h2>
+<p><a href="http://snap.stanford.edu/snappy/doc/reference/index-ref.html" target="_blank" rel="external">http://snap.stanford.edu/snappy/doc/reference/index-ref.html</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/10/29/Heuristics-for-finding-k-clubs/" data-id="k16hytpl1g7puifx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/11/19/snap/" data-id="40x5cqooepvhxs87" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/snap/">snap</a></li></ul>
+
     </footer>
   </div>
   
