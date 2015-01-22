@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: book | mag5323&#39;s blog</title>
+  <title>Archives: 2015 | mag5323&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="mag5323's blog">
-<meta property="og:url" content="http://yoursite.com/tags/book/">
+<meta property="og:url" content="http://yoursite.com/archives/2015/">
 <meta property="og:site_name" content="mag5323's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -67,10 +67,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Networks-an-introduction" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-networks" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/11/26/Networks-an-introduction/" class="article-date">
-  <time datetime="2014-11-26T03:39:29.000Z" itemprop="datePublished">11月 26 2014</time>
+    <a href="/2015/01/22/networks/" class="article-date">
+  <time datetime="2015-01-22T03:40:11.000Z" itemprop="datePublished">1月 22 2015</time>
 </a>
     
   </div>
@@ -81,7 +81,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/11/26/Networks-an-introduction/">Networks: an introduction</a>
+      <a class="article-title" href="/2015/01/22/networks/">Mining overlapping and hierarchical communities in complex networks</a>
     </h1>
   
 
@@ -89,18 +89,72 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="A_network,_also_called_a_graph,_is_a_collection_of_vertices_joined_by_edges-">A network, also called a graph, is a collection of vertices joined by edges.</h5>
-<h3 id="Naming_in_different_field">Naming in different field</h3>
-<p>Vertices and edges are also called nodes and links in computer science, sites and bonds in physics, and actors and ties in sociology.</p>
+        <h1 id="Mining_overlapping_and_hierarchical_communities_in_complex_networks">Mining overlapping and hierarchical communities in complex networks</h1>
+<h1 id="Definition">Definition</h1>
+<hr>
+<h2 id="1-_Overlapping">1. Overlapping</h2>
+<p>several nodes in the network may belong to multiple communities.</p>
+<h3 id="example">example</h3>
+<p>individuals have families, co-authors and friends.</p>
+<h2 id="2-_hierarchical_organization">2. hierarchical organization</h2>
+<p>several small communities are incorporated into larger ones in turn until they both form a whole network; and such a bigger community can afterward be split into several smaller communities.</p>
+<h3 id="example-1">example</h3>
+<p>several individuals make up a family; thousands of families incorporate into a city; then hundreds of cities<br>group into a state; and finally several states make up a country.</p>
+<h1 id="Motivation">Motivation</h1>
+<h3 id="A_common_framework_that_can_extract_both_overlapping_and_hierarchical_organization-">A common framework that can extract both overlapping and hierarchical organization.</h3>
+<ol>
+<li>Extract all meaningful units which can be maximal sub-graphs [1], maximal cliques [3], or even a sole node [4] from the<br>original social network then each meaningful unit is taken as an initial community.</li>
+<li>Adopting a specified similarity measurement repeatedly incorporate two communities with maximal similarity into a<br>new, larger one until only one community remains, which is a dendrogram.</li>
+<li>Cut through the dendrogram generated in step (2) to obtain an integral community organization represented in the form<br>of overlapping and hierarchical structures, in which quality reaches, or nearly reaches a local or global optimum.</li>
+</ol>
+<h1 id="Related_work">Related work</h1>
+<hr>
+<ol>
+<li>node-based<ul>
+<li>[5] R. Badie, A. Aleahmad, M. Asadpour, M. Rahgozar, <strong>An efficient agent-based algorithm for overlapping community detection using nodes’ closeness.</strong></li>
+<li>[6] G. Palla, I. Derényi, I. Farkas, T. Vicsek, <strong>Uncovering the overlapping community structure of complex networks in nature and society.</strong>     - [7] Y.Y. Ahn, J.P. Bagrow, S. Lehmann, <strong>Link communities reveal multi-scale complexity in networks</strong></li>
+<li>[8] L. Conrad, F. Reid, A. McDaid, N. Hurley, <strong>Detecting highly overlapping community structure by greedy clique expansion.</strong></li>
+<li>[9] A. McDaid, N. Hurley, <strong>Detecting highly overlapping communities with model-based overlapping seed expansion on Advances in Social Networks Analysis and Mining</strong></li>
+<li>[10] R. Cazabet, F. Amblard, C. Hanachi, <strong>Detection of overlapping communities in dynamical social networks, in: IEEE International Conference on Social</strong></li>
+<li>[14] J.R. Xie, S. Keelley, B.K. Szymanski, <strong>Overlapping community detection in networks: the state-of-the-art and comparative study.</strong></li>
+<li>[12] S. Gregory, <strong>Finding overlapping communities in networks by label propagation.</strong></li>
+<li>[15] S. Kelley, <strong>The existence and discovery of overlapping communities in large-scale networks (Ph.D. thesis), Rensselaer Polytechnic Institute.</strong></li>
+<li>[16] I. Psorakis, S. Roberts, M. Ebden, <strong>Overlapping community detection using Bayesian non-negative matrix factorization.</strong></li>
+</ul>
+</li>
+<li>link-based<ul>
+<li>[7] Y.Y. Ahn, J.P. Bagrow, S. Lehmann, <strong>Link communities reveal multi-scale complexity in networks</strong></li>
+<li>[18] Q. Ye, B. Wu, Z.X. Zhao, B. Wang, <strong>Detecting link communities in massive networks, in: Advances in Social Networks Analysis and Mining.</strong></li>
+<li>[19] C. Shi, Y. Cai, D. Fu, Y. Dong, B. Wu, <strong>A link clustering based overlapping community detection algorithm</strong></li>
+</ul>
+</li>
+</ol>
+<h1 id="Relevant_researches">Relevant researches</h1>
+<hr>
+<ol>
+<li>Mining overlapping communities<ul>
+<li>[5-12]</li>
+<li>[11] J.R. Xie, B.K. Szymanski, X.M. Liu, SLPA: <strong>Uncovering overlapping communities in social networks via a speaker–listener interaction dynamic process.</strong></li>
+</ul>
+</li>
+<li>extracts network hierarchy<ul>
+<li>[13] Q. Cheng, Z. Liu, J. Huang, C. Zhu, Y. Liu, <strong>Hierarchical clustering based on hyper-edge similarity for community detection.</strong></li>
+</ul>
+</li>
+<li>extract both overlapping and hierarchical organization<ul>
+<li>[4] A. Lancichinetti, S. Fortunato, J. Kertész, <strong>Detecting the overlapping and hierarchical community structure in complex networks.</strong></li>
+<li>[1] Y.Z. Cui, X.Y. Wang, J.Q. Li, <strong>Detecting overlapping communities in networks using the maximal sub-graph and the clustering coefficient.</strong></li>
+<li>[3] H.W. Shen, X.Q. Cheng, K. Cai, M.B. Hu, <strong>Dectect overlapping and hierarchical community structure in networks.</strong></li>
+</ul>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/11/26/Networks-an-introduction/" data-id="1zkfaud9lhjzemrg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/01/22/networks/" data-id="finr70bqezcwh05r" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/book/">book</a></li></ul>
-
     </footer>
   </div>
   
