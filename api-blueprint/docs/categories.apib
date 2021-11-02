@@ -1,0 +1,28 @@
+## Get Categories [GET /v1/categories/{id}]
+
+Get categories or single category if id is presented
+
++ Parameters
+    + id: id (required) - category_id
+
++ Response 200 (application/json)
+    + Body
+        ```json
+            {
+                "status": {
+                    "type": "OK",
+                    "subtype": null,
+                    "message": null
+                },
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Entertainment",
+                    },
+                    {
+                        "id": 2,
+                        "name": "News",
+                    },
+                ]
+            }
+        ```

@@ -1,0 +1,33 @@
+## Get Stores [GET /v1/stores/{type}]
+
+Get Related Articles of Article
+
++ Parameters
+    + type: `game` (string) - Storing type
+        + Members
+            + `game`
+            + `apps`
+
++ Response 200 (application/json)
+    + Body
+        ```json
+            {
+                "status": {
+                    "type": "OK",
+                    "subtype": null,
+                    "message": null
+                },
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Death Racing",
+                        "description": "introducing blablabla",
+                        "developer_id": 1,
+                        "category_id": 1,
+                        "type_id": 1,
+                        "created_at": 1635823890,
+                        "updated_at": 1635823890,
+                    },
+                ]
+            }
+        ```
